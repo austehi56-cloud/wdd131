@@ -1,0 +1,57 @@
+body {
+    display: grid;
+    height: 100vh;
+
+}
+
+header {
+    background-color: darkgray;
+    padding: 2rem;
+    grid-column: 1 / 4;
+}
+
+.left-sidebar {
+    background-color: lightblue;
+    grid-column: 1 / 2;
+}
+
+main {
+    background-color: white;
+    grid-column: 2 / 4;
+}
+
+.right-sidebar {
+    background: yellow;
+    grid-column: 3 / 4;
+}
+
+footer {
+    background: darkgray;
+    padding: 2rem;
+    text-align: center;
+    grid-column: 1 / 4;
+}
+
+.left-sidebar,
+.right-sidebar {
+    padding: 4rem;
+}
+
+nav a {
+    display: grid;
+    display: inline-block;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    margin: 4.0rem;
+    font-weight: bold;
+    color: white;
+
+}
+
+nav {
+    padding: 0.7rem;
+    background-color: black;
+    grid-column: 1 / 4;
+    justify-content: space-around;
+}
