@@ -30,6 +30,13 @@ header h1 {
     font: 600 1.6rem var(--font-head);
 }
 
+header h1 span {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 400;
+    font-style: italic;
+}
+
 nav {
     display: flex;
     justify-content: space-around;
@@ -172,5 +179,3 @@ footer p {
     color: #f5e11b;
     font-size: 0.85rem;
 }
-
-
