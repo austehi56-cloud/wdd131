@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>WDD 131 | Home</title>
-        <meta name="description" content="studying Web Development and Programming in BYU-pathway Idaho, this page is create for more update on BYU_pathway news for intake">
-        <meta name="author" content="Ehiremen Aigbadon">
+        <meta name="description" content="WDD 131  Dynamic Web Fundamentals homepage of Aigbadon Oluwatosin Austin: about me, management background, Nigeria, and web development resources.">
+        <meta name="author" content="Aigbadon Oluwatosin Austin">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;600&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="stylesheet" href="styles/base.css">
 </head>
 
 <body>
@@ -33,10 +34,11 @@
                 <div class="card-body">
                     <img class="portrait" src="images/austin.jpg" alt="Portrait of Aigbadon" width="120" height="160">
                     <p>
-                        My name is Aigbadon and I go by Austin. I am a Nigerian and live
-                        with my family in Edo State. I am currently working from home as a
-                        web developer. My children are my world and I love
-                        spending time with them. I love to travel and I love to learn new things.
+                        My name is Aigbadon Oluwatosin Austin. I have worked as an operations
+                        manager, a bank branch manager, a business office manager, and a
+                        communications manager. I am studying web development to add
+                        technical skills to my management experience, and I enjoy learning
+                        new things.
                     </p>
 
                     <h4>Edo State, Nigeria</h4>
@@ -79,14 +81,7 @@
         <p>&copy;<span id="year">2026</span> 🌸 Aigbadon O Austin 🌸 Nigeria</p> 
         <p id="lastModified"></p>
     </footer>
-
-    <script>
-        document.getElementById("year").textContent = new Date().getFullYear();
-        document.getElementById("lastModified").textContent =
-            "Last Modification: " + document.lastModified;
-    </script>
-
-    
+  
 </body>
 
 </html>
