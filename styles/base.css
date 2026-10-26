@@ -1,0 +1,176 @@
+:root {
+    --blue: #0b4a9e;
+    --dark: #1c1f26;
+    --text: #333;
+    --link: #1a3fd1;
+    --bg: #f2f2f2;
+    --font-head: "Montserrat Alternates", sans-serif;
+    --font-body: Cambria, Calibri, "Segoe UI", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    font-family: var(--font-body);
+    color: var(--text);
+    line-height: 1.8;
+}
+
+/* Header + nav */
+header h1 {
+    margin: 0;
+    padding: 1.5rem 1rem;
+    background: var(--blue);
+    color: #fff;
+    text-align: center;
+    font: 600 1.6rem var(--font-head);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background: var(--dark);
+    padding: 1rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font: 400 1.2rem var(--font-head);
+}
+
+nav a:hover,
+nav a:focus-visible {
+    text-decoration: underline;
+}
+
+/* Main */
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.name {
+    text-align: center;
+    font: 400 2.8rem var(--font-head);
+    margin: 1.5rem 0;
+}
+
+.columns {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+    align-items: start;
+}
+
+.card {
+    background: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}
+
+.card h3 {
+    margin: 0;
+    padding: 0.8rem;
+    background: var(--blue);
+    color: #fff;
+    text-align: center;
+    font: 600 1.2rem var(--font-head);
+}
+
+.card-body {
+    padding: 1.2rem 1.5rem;
+    overflow: hidden;
+}
+
+/* About me */
+.portrait {
+    float: right;
+    margin: 0 0 1rem 1rem;
+    border: 1px solid #ccc;
+    object-fit: cover;
+    background: #cfd8e6;
+}
+
+.card-body h4 {
+    clear: left;
+    max-width: 60%;
+    margin: 1.5rem 0 1rem;
+    text-align: center;
+    font: 600 1.3rem var(--font-head);
+    border-bottom: 1px solid #bbb;
+}
+
+.place {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.place p {
+    margin: 0;
+    flex: 1;
+}
+
+figure {
+    margin: 0;
+    text-align: center;
+    width: 190px;
+    flex-shrink: 0;
+}
+
+figcaption {
+    font-size: 0.85rem;
+    font-style: italic;
+    font-family: var(--font-head);
+}
+
+/* Nigeria flag built with CSS */
+.flag {
+    width: 190px;
+    height: 110px;
+    border: 1px solid #bbb;
+    background:
+        linear-gradient(#008751, #008751) left / 33.3% 100% no-repeat,
+        linear-gradient(#fff, #fff) center / 33.3% 100% no-repeat,
+        linear-gradient(#008751, #008751) right / 33.3% 100% no-repeat;
+}
+
+/* Resources */
+.resources ul {
+    margin: 0;
+    padding: 2rem 1.5rem 2rem 2.5rem;
+}
+
+.resources a {
+    color: var(--link);
+}
+
+/* Footer */
+footer {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: var(--blue);
+    color: #fff;
+    text-align: center;
+    font-family: var(--font-head);
+}
+
+footer p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+#lastModified {
+    color: #f5e11b;
+    font-size: 0.85rem;
+}
+
+

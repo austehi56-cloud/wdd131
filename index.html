@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WDD 131 | Home</title>
+    <link rel="stylesheet" href="styles/base.css">
+</head>
+
+<body>
+    <header>
+        <h1>WDD 131: Dynamic Web Fundamentals</h1>
+        <nav>
+            <a href="#">LinkedIn</a>
+            <a href="#">I-Learn</a>
+            <a href="#">Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="name">Aigbadon O Austin</h2>
+
+        <div class="columns">
+            <section class="card about">
+                <h3>About Me</h3>
+                <div class="card-body">
+                    <img class="portrait" src="images/austin.jpg" alt="Portrait of Aigbadon" width="120" height="160">
+                    <p>
+                        My name is Aigbadon and I go by Austin. I am a Nigerian and live
+                        with my family in Edo State. I am currently working from home as a
+                        web developer. My children are my world and I love
+                        spending time with them. I love to travel and I love to learn new things.
+                    </p>
+
+                    <h4>Edo State, Nigeria</h4>
+
+                    <div class="place">
+                        <figure>
+                            <div class="flag" role="img" aria-label="Flag of Nigeria"></div>
+                            <figcaption>Official Flag of Nigeria</figcaption>
+                        </figure>
+                        <p>
+                            Nigeria is the most populous country in Africa and is located in
+                            West Africa. It is home to over 250 ethnic groups and has a rich
+                            cultural heritage.
+                            Nigeria is known for its diverse landscapes, from the Sahara Desert
+                             in the north to the tropical rainforests in the south. 
+                            The country has a vibrant music and film industry, with Nollywood 
+                            being one of the largest film industries in the world.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <aside class="card resources">
+                <h3>Web Dev Resources</h3>
+                <ul>
+                    <li><a href="https://dev.to" target="_blank" rel="noopener">Dev.to Community</a></li>
+                    <li><a href="https://www.smashingmagazine.com" target="_blank" rel="noopener">Smashing Magazine</a>
+                    </li>
+                    <li><a href="https://css-tricks.com" target="_blank" rel="noopener">CSS Tricks</a></li>
+                    <li><a href="https://www.w3schools.com" target="_blank" rel="noopener">W3 Schools</a></li>
+                    <li><a href="https://www.udemy.com" target="_blank" rel="noopener">Udemy</a></li>
+                    <li><a href="https://picsum.photos" target="_blank" rel="noopener">Lorem Picsum Image
+                          
+                </ul>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="year">2026</span> 🌸 Aigbadon O Austin 🌸 Nigeria</p> 
+        <p id="lastModified"></p>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+        document.getElementById("lastModified").textContent =
+            "Last Modification: " + document.lastModified;
+    </script>
+</body>
+
+</html>
