@@ -81,7 +81,10 @@
         <p>&copy;<span id="year">2026</span> 🌸 Aigbadon O Austin 🌸 Nigeria</p> 
         <p id="lastModified"></p>
     </footer>
-  
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("lastModified").textContent = "Last Modification: " + document.lastModified;
+</script>
 </body>
 
 </html>
