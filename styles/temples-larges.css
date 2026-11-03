@@ -17,11 +17,7 @@
     }
 
     /* Flexbox Navigation in Horizontal Row */
-    .navigation {
-        display: flex !important;
-        flex-direction: row;
-        gap: 0.5rem;
-    }
+   
 
     .navigation a {
         border-radius: 4px;
