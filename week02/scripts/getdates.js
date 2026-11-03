@@ -17,7 +17,7 @@ button.addEventListener('click', function () {
         li.textContent = input.value;
 
         // Step 9: Set the delete button's textContent to ❌
-        deleteButton.textContent = '';
+        deleteButton.textContent = '❌';
 
         // Step 10: Append the delete button to the li element
         li.append(deleteButton);
