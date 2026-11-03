@@ -65,7 +65,9 @@ header h1 {
 /* Navigation Styles (Flexbox) */
 nav {
     margin-top: 0.5rem;
+    display: flex;
 }
+
 
 .navigation {
     list-style: none;
