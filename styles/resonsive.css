@@ -19,7 +19,6 @@ h2 {
 }
 
 nav {
-   
     max-width: 700px;
     margin: 1rem auto;
 }
@@ -43,9 +42,22 @@ nav {
     content: "❌";
 }
 
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+    background-color: #333;
+    color: #fff;
+}
 
-
-
+.nav a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
 
 .nav a:hover {
     background-color: #bbb;
@@ -89,11 +101,11 @@ nav {
         /* hide hamburger button */
     }
 
-    .nav {
+    .navigation {
         flex-direction: row;
     }
 
-    .navigation a {
+    .nav a {
         display: block;
         flex: 1 1 100%;
     }
