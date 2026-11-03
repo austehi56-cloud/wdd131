@@ -1,0 +1,35 @@
+@media screen and (min-width: 640px) {
+
+    /* Hide Hamburger Button on Large Views */
+    #menu {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+
+    .header-container {
+        margin-bottom: 0;
+    }
+
+    /* Flexbox Navigation in Horizontal Row */
+    .navigation {
+        display: flex !important;
+        flex-direction: row;
+        gap: 0.5rem;
+    }
+
+    .navigation a {
+        border-radius: 4px;
+        padding: 0.5rem 1rem;
+    }
+
+    /* Multi-column Grid for Larger Displays */
+    .temple-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
