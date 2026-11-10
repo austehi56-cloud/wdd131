@@ -1,0 +1,134 @@
+:root {
+    --primary-color: #bc002d;
+    /* Crimson Red */
+    --secondary-color: #1a1a1a;
+    /* Charcoal */
+    --bg-color: #f8f9fa;
+    --card-bg: rgba(255, 255, 255, 0.9);
+    --text-color: #222222;
+    --light-text: #ffffff;
+    --font-main: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    text-align: center;
+    padding: 1.5rem 1rem;
+    border-bottom: 6px solid var(--secondary-color);
+}
+
+header h1 {
+    font-size: 2.25rem;
+    letter-spacing: 1px;
+}
+
+.hero-container {
+    position: relative;
+    width: 100%;
+}
+
+.hero-container picture img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.card {
+    background-color: var(--card-bg);
+    padding: 1.5rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.card h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.card ul {
+    list-style: none;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.card li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.35rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.weather-icon-mobile {
+    display: block;
+    margin: 0 auto 1rem;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: var(--light-text);
+    text-align: center;
+    padding: 1.25rem 1rem;
+    font-size: 0.9rem;
+}
+
+/* Wider View Layout */
+@media (min-width: 768px) {
+    .hero-container picture img {
+        min-height: 550px;
+        max-height: 75vh;
+    }
+
+    .card {
+        position: absolute;
+        width: 320px;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+    }
+
+    .card h2 {
+        background-color: var(--primary-color);
+        color: var(--light-text);
+        text-align: left;
+        padding: 0.6rem 1rem;
+        margin: -1.5rem -1.5rem 1rem -1.5rem;
+        border-radius: 6px 6px 0 0;
+    }
+
+    .data {
+        top: 2rem;
+        left: 2rem;
+    }
+
+    .weather {
+        bottom: 2rem;
+        right: 2rem;
+    }
+
+    /* Hide mobile SVG and use pseudo-element emoticon on wide view */
+    .weather-icon-mobile {
+        display: none;
+    }
+
+    .weather h2::after {
+        content: " ⛅";
+        font-size: 1.4rem;
+        margin-left: 0.4rem;
+    }
+}
