@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Austin Home</title>
+    <link rel="stylesheet" href="styles/app.css">
+    <script src="scripts/app.js" defer></script>
+</head>
+
+<body>
+    <div class="phone">
+        <header class="topbar">
+            <div class="logo">AustinCash<small>Payment Service <b>Bank</b></small></div>
+            <button class="bell" id="bell" aria-label="Notifications">🔔<span id="badge">88</span></button>
+        </header>
+
+        <main>
+            <section class="balance-card">
+                <div class="actions">
+                    <button class="pill" data-msg="Add Money">⊕ Add Money</button>
+                    <button class="pill" data-msg="Withdraw Cash">⊖ Withdraw Cash</button>
+                </div>
+            </section>
+
+            <div class="refer" data-msg="Refer & Earn">
+                <span class="gift">🎁</span>
+                <p><b>Invite a friend to AustinCash</b><br>Earn upto ₦500 per referral</p>
+                <a href="#" class="link">Refer &amp; Earn ›</a>
+            </div>
+
+            <div class="email" id="email">
+                <span class="mail">✉</span>
+                <p><b>Update Your Email ID !</b><br>For offers &amp; updates.</p>
+                <a href="#" class="yellow">Update Now &gt;</a>
+            </div>
+
+            <div class="cashback">
+                <span class="cash">💵</span>
+                <p>Earn up to <b>10% Cashback</b><br>on all <b>Data Bundles</b> &amp; <b>Bill Payments</b></p>
+                <button class="know" data-msg="Cashback details">Know More</button>
+            </div>
+
+            <section class="card">
+                <h2>Transfer &amp; Cashout</h2>
+                <div class="grid">
+                    <button class="item" data-msg="Transfer Money"><i>₦↗</i>Transfer Money</button>
+                    <button class="item" data-msg="Fund Smart Saver"><span class="tag">Earn 15%
+                            Interest</span><i>🐖</i>Fund Smart Saver</button>
+                    <button class="item" data-msg="Withdraw Cash"><i>🏧</i>Withdraw Cash</button>
+                    <button class="item" data-msg="More Services"><i class="dots">○○○</i>More Services</button>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>Recharge &amp; Bill Payments</h2>
+                <div class="grid">
+                    <button class="item" data-msg="Recharge Airtime"><i>📱</i>Recharge Airtime</button>
+                    <button class="item" data-msg="Buy Bundle"><i>📶</i>Buy Bundle</button>
+                    <button class="item" data-msg="Pay Bill"><i>🧾</i>Pay Bill</button>
+                    <button class="item" data-msg="Electricity Prepaid"><i>🔌</i>Electricity Prepaid</button>
+                    <button class="item" data-msg="TV"><i>📺</i>TV</button>
+                    <button class="item" data-msg="Betting"><i>🎲</i>Betting</button>
+                    <button class="item" data-msg="Utilities"><i>⚡</i>Utilities</button>
+                    <button class="item" data-msg="More"><i class="dots">○○○</i>More</button>
+                </div>
+            </section>
+        </main>
+
+        <nav class="tabs">
+            <button class="tab active" data-tab="Home"><span>🏠</span>Home</button>
+            <button class="tab" data-tab="Scan & Pay"><span>▦</span>Scan &amp; Pay</button>
+            <button class="tab" data-tab="Transaction History"><span>📄</span>Transaction History</button>
+            <button class="tab" data-tab="More"><span>▥</span>More</button>
+        </nav>
+        <div class="toast" id="toast" role="status"></div>
+    </div>
+</body>
+
+</html>
