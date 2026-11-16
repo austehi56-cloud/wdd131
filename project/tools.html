@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Money Basics | Tools & Resources</title>
+    <link rel="stylesheet" href="styles/project.css">
+        <script src="scripts/project.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Smart Money Basics</a>
+            <button id="menu-toggle" class="menu-toggle" aria-label="Toggle Menu">Menu</button>
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="budgeting.html">Budgeting</a></li>
+                    <li><a href="saving.html">Saving</a></li>
+                    <li><a href="debt-scams.html">Debt & Scams</a></li>
+                    <li><a href="tools.html" class="active">Tools & Resources</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Tools & Free Resources</h1>
+        <p>Put what you have learned into practice with our interactive budget calculator and curated list of free
+            personal finance tools.</p>
+
+        <h2>50/30/20 Monthly Budget Calculator</h2>
+        <div class="calc-box">
+            <form id="budget-form">
+                <div class="form-group">
+                    <label for="monthly-income">Enter Your Monthly Take-Home Income ($):</label>
+                    <input type="number" id="monthly-income" placeholder="e.g., 2500" min="1" step="any" required>
+                </div>
+                <button type="submit" class="btn">Calculate Budget</button>
+            </form>
+
+            <div id="calc-results" class="results" hidden>
+                <div class="result-item">
+                    <span>Needs (50%):</span>
+                    <span id="needs-out">$0.00</span>
+                </div>
+                <div class="result-item">
+                    <span>Wants (30%):</span>
+                    <span id="wants-out">$0.00</span>
+                </div>
+                <div class="result-item">
+                    <span>Savings & Debt (20%):</span>
+                    <span id="savings-out">$0.00</span>
+                </div>
+            </div>
+        </div>
+
+        <h2>Free Budgeting Templates & Apps</h2>
+        <ul class="styled-list">
+            <li><strong>Google Sheets Monthly Budget Template:</strong> Built directly into Google Drive under the
+                Template Gallery for quick, free spreadsheet tracking.</li>
+            <li><strong>Goodbudget:</strong> A free digital envelope budgeting app ideal for planning household spending
+                categories ahead of time.</li>
+            <li><strong>EveryDollar (Free Tier):</strong> A straightforward zero-based budgeting app for logging income
+                and expenses manually.</li>
+            <li><strong>GnuCash:</strong> Free, open-source desktop accounting software for users who want detailed
+                expense and bank reconciliation tracking.</li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Austehi Smart Money. Educational content for personal finance beginners.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
