@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tithing and Other Offerings</title>
+    <link rel="stylesheet" href="styles/table.css">
+</head>
+
+<body>
+
+    <div class="slip-container">
+        <!-- Top Perforated Dots -->
+        <div class="perforation">
+            <span class="hole"></span><span class="hole"></span><span class="hole"></span>
+            <span class="hole"></span><span class="hole"></span><span class="hole"></span>
+            <span class="hole"></span><span class="hole"></span><span class="hole"></span>
+            <span class="hole"></span><span class="hole"></span><span class="hole"></span>
+            <span class="hole"></span><span class="hole"></span><span class="hole"></span>
+        </div>
+
+        <div class="content">
+            <h1>Tithing and Other Offerings</h1>
+
+            <!-- User and Ward Information -->
+            <div class="meta-info">
+                <div class="meta-left">
+                    <div class="date">07 Feb 2024</div>
+                    <div class="name-row">
+                        <span>Donor Name</span>
+                        <span class="help-icon">?</span>
+                    </div>
+                    <div class="mrn">Membership Record Number: 000-0000-0000</div>
+                </div>
+                <div class="meta-right">
+                    <div>Spanish Fork Utah Palmyra Stake</div>
+                    <div>Legacy Farms 4th Ward</div>
+                    <div class="country">United States</div>
+                </div>
+            </div>
+
+            <!-- Donation Table -->
+            <form>
+                <table class="offerings-table">
+                    <tbody>
+                        <tr>
+                            <td class="label-col bold-label">Tithing</td>
+                            <td class="input-col">
+                                <input type="text" class="active-input" placeholder="0.00">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="label-col bold-label">Fast Offerings</td>
+                            <td class="input-col">
+                                <input type="text" placeholder="0.00">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="label-col regular-label">General Missionary</td>
+                            <td class="input-col">
+                                <input type="text" placeholder="0.00">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="label-col regular-label">
+                                <div>Ward Missionary</div>
+                                <select>
+                                    <option value="">Select a missionary ...</option>
+                                    <option value="missionary1">Missionary 1</option>
+                                    <option value="missionary2">Missionary 2</option>
+                                    <option value="missionary3">Missionary 3</option>
+                                    
+                                </select>
+                            </td>
+                            <td class="input-col"></td>
+                        </tr>
+                        <tr>
+                            <td class="label-col regular-label">Humanitarian Aid</td>
+                            <td class="input-col">
+                                <input type="text" placeholder="0.00">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="label-col regular-label">General Offerings</td>
+                            <td class="input-col">
+                                <input type="text" placeholder="0.00">
+                            </td>
+                        </tr>
+                        <tr class="total-row">
+                            <td class="label-col total-label">Total</td>
+                            <td class="input-col total-amount">$0.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Disclaimer -->
+                <p class="disclaimer">
+                    All donations to the Church are free-will offerings and become the Church's property. In furtherance
+                    of its overall mission, the Church may shift donations from any designated use to other uses, at its
+                    sole discretion.
+                </p>
+
+                <!-- Personal Note Link -->
+                <div class="personal-note">
+                    <a href="#">&#9998; Personal Note</a>
+                </div>
+
+                <!-- Form Buttons -->
+                <div class="actions">
+                    <button type="reset" class="btn-clear">Clear</button>
+                    <button type="submit" class="btn-next">Next Step</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
