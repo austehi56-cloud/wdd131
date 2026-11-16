@@ -12,6 +12,8 @@ body {
 }
 
 main {
+    display: flex;
+    flex-direction: column;
     max-width: 500px;
     margin: 0 auto;
     padding: 2rem 1rem;
@@ -23,6 +25,11 @@ h1 {
     font-size: 1.8rem;
 }
 
+p {
+    text-align: center;
+    margin-bottom: .5rem;
+    font-size: 1.rem;
+}
 img {
     display: block;
     width: 400px;
@@ -30,7 +37,7 @@ img {
     object-fit: cover;
     margin: 0 auto 2rem auto;
     background-color: #000;
-    animation: fadeFromBlack 1.5s ease-in-out forwards;
+    animation: fadeFromBlack 1 .5s ease-in-out forwards;
 }
 
 @keyframes fadeFromBlack {
