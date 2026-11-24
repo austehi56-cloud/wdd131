@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Maple Street Community Garden</title>
+    <meta name="description" content="Planting guide, available garden plots, and sign-up for Maple Street Community Garden.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/siteplan.css">
+    <script src="scripts/siteplan.js" defer></script>
+</head>
+
+<body>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="site-header">
+        <div class="wrap header-inner">
+            <a class="brand" href="#top" id="top">
+                <span class="logo" aria-hidden="true">
+                    <svg viewBox="0 0 48 48" width="34" height="34">
+                        <path d="M24 38V22" stroke="#2F5D3A" stroke-width="3" stroke-linecap="round" />
+                        <path d="M24 24c-8 0-12-4-12-11 8 0 12 4 12 11z" fill="#2F5D3A" />
+                        <path d="M24 20c0-6 4-10 11-10 0 7-4 10-11 10z" fill="#A8481F" />
+                        <rect x="14" y="38" width="20" height="4" rx="2" fill="#2F5D3A" />
+                    </svg>
+                </span>
+                <span class="brand-text">
+                    <small>Community garden</small>
+                    <strong>Maple Street Community Garden</strong>
+                </span>
+            </a>
+            <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav">Menu</button>
+            <nav id="nav" class="nav" aria-label="Main">
+                <a href="#guide">Planting guide</a>
+                <a href="#plots">Plots</a>
+                <a href="#join">Sign up</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="hero">
+            <div class="wrap">
+                <h1>Grow food with your neighbors.</h1>
+                <p>Maple Street Community Garden is run by members and open to the whole neighborhood. Find out what to
+                    plant, see which plots are free, and sign up for a work day.</p>
+                <div class="hero-actions">
+                    <a class="btn" href="#plots">See available plots</a>
+                    <a class="btn btn-ghost" href="#join">Volunteer on a work day</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="guide" class="wrap section">
+            <h2>Seasonal planting guide</h2>
+            <p class="lead">Pick a month to see what you can plant.</p>
+            <label class="field-inline" for="monthSelect">Month
+                <select id="monthSelect"></select>
+            </label>
+            <div id="guideResult" class="guide-result" aria-live="polite"></div>
+        </section>
+
+        <section id="plots" class="wrap section">
+            <h2>Garden plots</h2>
+            <p class="lead">Plots are rented by the season. Prices cover water, tools, and compost.</p>
+            <div class="filters" role="group" aria-label="Filter plots">
+                <button class="chip active" data-filter="all">All plots</button>
+                <button class="chip" data-filter="available">Available now</button>
+            </div>
+            <div id="plotList" class="plot-grid"></div>
+        </section>
+
+        <section id="join" class="wrap section">
+            <h2>Request a plot or volunteer</h2>
+            <p class="lead">Fill in the form and a garden coordinator will reply within three days.</p>
+            <form id="joinForm" novalidate>
+                <div class="row">
+                    <div class="field">
+                        <label for="name">Full name</label>
+                        <input id="name" name="name" type="text" autocomplete="name" required>
+                        <span class="error" id="nameErr"></span>
+                    </div>
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" autocomplete="email" required>
+                        <span class="error" id="emailErr"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="field">
+                        <label for="request">I want to</label>
+                        <select id="request" name="request">
+                            <option value="plot">Request a garden plot</option>
+                            <option value="volunteer">Volunteer on a work day</option>
+                            <option value="both">Do both</option>
+                        </select>
+                    </div>
+                    <div class="field" id="plotField">
+                        <label for="plotChoice">Preferred plot</label>
+                        <select id="plotChoice" name="plotChoice"></select>
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="message">Anything we should know? (optional)</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+                <button class="btn" type="submit">Send request</button>
+                <p id="formStatus" class="status" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap footer-inner">
+            <p><strong>Maple Street Community Garden</strong><br>maplestreetgarden.org</p>
+            <p>&copy; <span id="year"></span> Maple Street Community Garden</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
