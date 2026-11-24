@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form id="reviewForm">
+          
+            <div class="form-group">
+                <label for="productName">Product Name</label>
+                <select id="productName" name="productName" required>
+                    <option value="" disabled selected>Choose a Product ...</option>
+                    <option value="product1">Austehi 56</option>
+                    <option value="product2">Simi linc</option>
+                    <option value="product3">julaust</option>
+                    <option value="product4">julpreme</option>
+                </select>
+            </div>
+
+         
+            <div class="form-group">
+                <label>Overall Rating</label>
+                <div class="rating-group">
+                    <label class="rating-option">
+                        <span>&#9734;</span>
+                        <input type="radio" name="rating" value="1" required>
+                    </label>
+                    <label class="rating-option">
+                        <span>&#9734;&#9734;</span>
+                        <input type="radio" name="rating" value="2">
+                    </label>
+                    <label class="rating-option">
+                        <span>&#9734;&#9734;&#9734;</span>
+                        <input type="radio" name="rating" value="3">
+                    </label>
+                    <label class="rating-option">
+                        <span>&#9734;&#9734;&#9734;&#9734;</span>
+                        <input type="radio" name="rating" value="4">
+                    </label>
+                    <label class="rating-option">
+                        <span>&#9734;&#9734;&#9734;&#9734;&#9734;</span>
+                        <input type="radio" name="rating" value="5">
+                    </label>
+                </div>
+            </div>
+
+          
+            <div class="form-group">
+                <label for="installDate">Date of Installation</label>
+                <input type="date" id="installDate" name="installDate" required>
+            </div>
+
+       
+            <div class="form-group">
+                <label>
+                    Which features did you find useful in the product?<br>
+                    <span class="italic-note">(Check all that apply)</span>
+                </label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="features" value="durability"> Durability</label>
+                    <label><input type="checkbox" name="features" value="ease"> Ease of Use</label>
+                    <label><input type="checkbox" name="features" value="performance"> Performance</label>
+                    <label><input type="checkbox" name="features" value="design"> Design</label>
+                </div>
+            </div>
+
+       
+            <div class="form-group">
+                <label for="writtenReview">
+                    Written Review <span class="optional">(Optional)</span>
+                </label>
+                <textarea id="writtenReview" name="writtenReview" rows="5" required></textarea>
+            </div>
+
+           
+            <div class="form-group">
+                <label for="userName">
+                    Your Name <span class="optional"></span>
+                </label>
+                <input type="text" id="userName" name="userName" required>
+            </div>
+
+          
+            <button type="submit">Post Review</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentYear"></span> &#127802; Aigbadon O Austin &#127802;</p>
+        <p> Nigeria</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
