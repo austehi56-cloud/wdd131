@@ -141,3 +141,9 @@ footer p {
     font-size: 0.85rem;
     line-height: 1.5;
 }
+
+@media only screen and (min-width: 600px) {
+    body {
+        max-width: 600px;
+        padding: 20px;
+    }

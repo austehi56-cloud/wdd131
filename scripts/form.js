@@ -5,9 +5,6 @@ const products = [
     { id: "fs-1987", name: "Time Circuits" },
     { id: "ac-2000", name: "Low Voltage Reactor" },
     { id: "jj-1969", name: "Warp Equalizer" },
-    { id: "tt-1985", name: "Hoverboard" },
-    { id: "tt-2015", name: "Mr. Fusion" },
-    { id: "tt-1989", name: "Delorean Time Machine" }
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
