@@ -223,3 +223,19 @@ code {
         padding: .5rem 1.2rem 1.6rem;
     }
 }
+
+.chip-green {
+    background: #2F5D3A;
+}
+
+.chip-cream {
+    background: #FAF6EC;
+}
+
+.chip-rust {
+    background: #A8481F;
+}
+
+.chip-ink {
+    background: #24301F;
+}
