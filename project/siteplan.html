@@ -15,111 +15,87 @@
 </head>
 
 <body>
-    <a class="skip" href="#main">Skip to content</a>
+    <main class="document">
+        <header class="doc-header">
+            <div class="logo" aria-hidden="true">
+                <svg viewBox="0 0 64 64" width="64" height="64" role="img">
+                    <circle cx="32" cy="32" r="32" fill="#FAF6EC" />
+                    <path d="M32 46V32" stroke="#2F5D3A" stroke-width="3.5" stroke-linecap="round" fill="none" />
+                    <path d="M32 33c-8 1-13-3-14-11 8-1 14 3 14 11z" fill="#2F5D3A" />
+                    <path d="M32 29c0-8 5-13 14-13 1 8-5 14-14 13z" fill="#A8481F" />
+                    <rect x="20" y="46" width="24" height="4" rx="2" fill="#2F5D3A" />
+                </svg>
+            </div>
+            <div>
+                <p class="doc-label">Website Planning Document</p>
+                <h1>Maple Street Community Garden</h1>
+            </div>
+        </header>
 
-    <header class="site-header">
-        <div class="wrap header-inner">
-            <a class="brand" href="#top" id="top">
-                <span class="logo" aria-hidden="true">
-                    <svg viewBox="0 0 48 48" width="34" height="34">
-                        <path d="M24 38V22" stroke="#2F5D3A" stroke-width="3" stroke-linecap="round" />
-                        <path d="M24 24c-8 0-12-4-12-11 8 0 12 4 12 11z" fill="#2F5D3A" />
-                        <path d="M24 20c0-6 4-10 11-10 0 7-4 10-11 10z" fill="#A8481F" />
-                        <rect x="14" y="38" width="20" height="4" rx="2" fill="#2F5D3A" />
-                    </svg>
-                </span>
-                <span class="brand-text">
-                    <small>Community garden</small>
-                    <strong>Maple Street Community Garden</strong>
-                </span>
-            </a>
-            <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav">Menu</button>
-            <nav id="nav" class="nav" aria-label="Main">
-                <a href="#guide">Planting guide</a>
-                <a href="#plots">Plots</a>
-                <a href="#join">Sign up</a>
-            </nav>
+        <div class="doc-body">
+            <section>
+                <h2>Site Name</h2>
+                <p><strong>Maple Street Community Garden</strong> — the name of the neighborhood garden the site
+                    represents, so visitors recognize it right away. The sprout logo above will appear in the header of
+                    every page.</p>
+                <p>Possible domain: <code>maplestreetgarden.org</code></p>
+            </section>
+
+            <section>
+                <h2>Site Purpose</h2>
+                <p>The site is an information hub for garden members and neighbors. It provides a seasonal planting
+                    guide, a list of available garden plots, and a form to request a plot or sign up to volunteer.</p>
+            </section>
+
+            <section>
+                <h2>Scenarios</h2>
+                <ul>
+                    <li>What vegetables can I plant this month?</li>
+                    <li>Are any garden plots available, and how much do they cost?</li>
+                    <li>How do I sign up to volunteer on a work day?</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Color Schema</h2>
+                <div class="swatches">
+                    <button class="swatch" data-hex="#2F5D3A" type="button" aria-label="Copy #2F5D3A">
+                        <span class="chip" style="background:#2F5D3A"></span>
+                        <span class="meta"><strong>#2F5D3A</strong><small>Header, footer, headings</small></span>
+                    </button>
+                    <button class="swatch" data-hex="#FAF6EC" type="button" aria-label="Copy #FAF6EC">
+                        <span class="chip" style="background:#FAF6EC"></span>
+                        <span class="meta"><strong>#FAF6EC</strong><small>Page background</small></span>
+                    </button>
+                    <button class="swatch" data-hex="#A8481F" type="button" aria-label="Copy #A8481F">
+                        <span class="chip" style="background:#A8481F"></span>
+                        <span class="meta"><strong>#A8481F</strong><small>Accents, buttons, links</small></span>
+                    </button>
+                    <button class="swatch" data-hex="#24301F" type="button" aria-label="Copy #24301F">
+                        <span class="chip" style="background:#24301F"></span>
+                        <span class="meta"><strong>#24301F</strong><small>Paragraph text</small></span>
+                    </button>
+                </div>
+                <p class="hint">Click a swatch to copy its color code.</p>
+            </section>
+
+            <section>
+                <h2>Typography</h2>
+                <div class="type-grid">
+                    <div class="type-card">
+                        <p class="type-name">Headings: Poppins Bold</p>
+                        <p class="sample heading-sample">Plant, grow, share.</p>
+                    </div>
+                    <div class="type-card">
+                        <p class="type-name">Body: Nunito Sans Regular</p>
+                        <p class="sample">Tomatoes, beans, and squash go in after the last frost.</p>
+                    </div>
+                </div>
+            </section>
         </div>
-    </header>
-
-    <main id="main">
-        <section class="hero">
-            <div class="wrap">
-                <h1>Grow food with your neighbors.</h1>
-                <p>Maple Street Community Garden is run by members and open to the whole neighborhood. Find out what to
-                    plant, see which plots are free, and sign up for a work day.</p>
-                <div class="hero-actions">
-                    <a class="btn" href="#plots">See available plots</a>
-                    <a class="btn btn-ghost" href="#join">Volunteer on a work day</a>
-                </div>
-            </div>
-        </section>
-
-        <section id="guide" class="wrap section">
-            <h2>Seasonal planting guide</h2>
-            <p class="lead">Pick a month to see what you can plant.</p>
-            <label class="field-inline" for="monthSelect">Month
-                <select id="monthSelect"></select>
-            </label>
-            <div id="guideResult" class="guide-result" aria-live="polite"></div>
-        </section>
-
-        <section id="plots" class="wrap section">
-            <h2>Garden plots</h2>
-            <p class="lead">Plots are rented by the season. Prices cover water, tools, and compost.</p>
-            <div class="filters" role="group" aria-label="Filter plots">
-                <button class="chip active" data-filter="all">All plots</button>
-                <button class="chip" data-filter="available">Available now</button>
-            </div>
-            <div id="plotList" class="plot-grid"></div>
-        </section>
-
-        <section id="join" class="wrap section">
-            <h2>Request a plot or volunteer</h2>
-            <p class="lead">Fill in the form and a garden coordinator will reply within three days.</p>
-            <form id="joinForm" novalidate>
-                <div class="row">
-                    <div class="field">
-                        <label for="name">Full name</label>
-                        <input id="name" name="name" type="text" autocomplete="name" required>
-                        <span class="error" id="nameErr"></span>
-                    </div>
-                    <div class="field">
-                        <label for="email">Email</label>
-                        <input id="email" name="email" type="email" autocomplete="email" required>
-                        <span class="error" id="emailErr"></span>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="field">
-                        <label for="request">I want to</label>
-                        <select id="request" name="request">
-                            <option value="plot">Request a garden plot</option>
-                            <option value="volunteer">Volunteer on a work day</option>
-                            <option value="both">Do both</option>
-                        </select>
-                    </div>
-                    <div class="field" id="plotField">
-                        <label for="plotChoice">Preferred plot</label>
-                        <select id="plotChoice" name="plotChoice"></select>
-                    </div>
-                </div>
-                <div class="field">
-                    <label for="message">Anything we should know? (optional)</label>
-                    <textarea id="message" name="message" rows="4"></textarea>
-                </div>
-                <button class="btn" type="submit">Send request</button>
-                <p id="formStatus" class="status" role="status" aria-live="polite"></p>
-            </form>
-        </section>
     </main>
 
-    <footer class="site-footer">
-        <div class="wrap footer-inner">
-            <p><strong>Maple Street Community Garden</strong><br>maplestreetgarden.org</p>
-            <p>&copy; <span id="year"></span> Maple Street Community Garden</p>
-        </div>
-    </footer>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
     <script src="script.js"></script>
 </body>
